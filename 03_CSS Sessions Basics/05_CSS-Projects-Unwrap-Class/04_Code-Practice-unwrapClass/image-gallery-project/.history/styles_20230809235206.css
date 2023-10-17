@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.card {
+    width: 32%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}

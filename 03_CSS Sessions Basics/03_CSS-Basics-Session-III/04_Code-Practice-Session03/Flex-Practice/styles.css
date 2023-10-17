@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    /* Flex Box Parent Properties:)- */
+    /* Flex-Direction Property */
+    /* flex-direction: column; */
+    /* Flex-Wrap Property */
+    flex-wrap: wrap;
+    /* Justify-Content Property (for row or main-axis)*/
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* Align-Items Property (for column or cross-axis) */
+    /* align-items: baseline; */
+    /* align-items: flex-end; */
+    align-items: start;
+    /* gap: 10px; */
+    /* gap: 20px; */
+    /* align-content: space-evenly; */
+}
+
+.box {
+    background-color: aqua;
+    border: 1px solid brown;
+    /* Flex Items flex-grow property, this prop stretches the width of flex items equally acc. to the remaining space */
+    /* by default flex-grow prop. value is 0 */
+    /* flex-grow: 1; */
+    /* flex-basis: 100px; */
+    /* width: 100px; */
+    flex-basis: 50%;
+}
+
+#box1 {
+    /* Flex Items order property */
+    order: 2;
+    /* give any number than 1 in order property, default order is 0 */
+    /* Flex Items flex-grow property */
+    /* flex-grow: 1; */
+    /* align-self prop. of flex-items, this is to used to align individual flex items */
+    /* align-self: stretch; */
+}
+
+#box4 {
+    order: 8;
+    /* flex-shrink flex item property */
+    /* flex shrink is 0 by default */
+    /* flex-shrink: 1; */
+    /* box4 jaldi squeeze hoga as compared to baaki boxes flex shrink prop set karne se  */
+    /* align-self: end; */
+}
+
+#box3 {
+    order: 2;
+    /* if you want to place box3 in between box1 and box4 then give any number between 2 and 8 in order property*/
+    /* flex-basis prop. of flex items, it is used to set width as width prop. does but flex-basis does it in a responsive manner */
+    /* refer to mdn foe the diff. between width and flex-basis */
+    /* flex-basis: 100px; */
+    /* align-self: start; */
+}
+
+
+/* #box2 {
+    /* align-self: flex-end; */
+
+
+/* } */

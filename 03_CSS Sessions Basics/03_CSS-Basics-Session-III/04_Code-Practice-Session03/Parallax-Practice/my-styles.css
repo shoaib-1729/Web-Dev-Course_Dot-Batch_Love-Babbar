@@ -1,0 +1,43 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #wrapper {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+        }
+        
+        .container {
+            height: 100%;
+            position: relative;
+            /* aligning contents of the container in center (since we want heading to appear at centre) using flex-container properties  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* preserve 3d in transform-style property so that our 3D effect will come in action */
+            transform-style: preserve-3d;
+        }
+        
+        .backgroundImage {
+            transform: translateZ(-40px) scale(5);
+            /*moving background Image to 40px in -Z axis, and after that scaling the image so that it looks bigger*/
+        }
+        
+        .foregroundImage {
+            transform: translateZ(-20px) scale(3);
+            /*foreground image should be nearer to eyes (therefore, moving it 20px in -Z axis) so that it seems to appear nearer due to which it will seem moving faster than background image, also provide a scale so that it looks bigger*/
+        }
+        
+        .backgroundImage,
+        .foregroundImage {
+            /* for overlapping image of back and foreground set its position to absolute relative to its parent container div and set same height and width to both the images */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }

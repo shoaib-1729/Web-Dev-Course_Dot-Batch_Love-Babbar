@@ -1,0 +1,32 @@
+.container {
+    background-color: magenta;
+    height: 1000px;
+    width: 1000px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 150px 700px 150px 1fr;
+}
+
+.box {
+    background-color: aqua;
+    /* height: 100px; */
+    /* width: 100px; */
+    border: 3px solid black;
+}
+
+#Box-1,
+#Box-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#box2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#box3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

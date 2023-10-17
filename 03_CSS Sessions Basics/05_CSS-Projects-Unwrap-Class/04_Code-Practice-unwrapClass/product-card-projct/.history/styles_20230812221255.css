@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkGreen: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --head: 2rem;
+    --text: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-box {
+    margin: 1em 2em;
+    max-width: 200px;
+    background-color: #fff;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+
+.desktop-img {
+    /* image wil not be visible on desktop */
+    display: none;
+}
+
+.mobile-img {
+    border-radius: 1em 1em 0 0;
+    -webkit-border-radius: 1em 1em 0 0;
+    -moz-border-radius: 1em 1em 0 0;
+    -ms-border-radius: 1em 1em 0 0;
+    -o-border-radius: 1em 1em 0 0;
+}
+
+.card-text {
+    text-align: left;
+    margin: 1.5em 2em;
+    /* padding will also do the same work as margin */
+    /* padding: 1.5em 2em; */
+}
+
+.product {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text);
+    color: var(--grey);
+    letter-spacing: 0.3rem;
+    /* used for capitalizing the text */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.product-title {
+    font-family: "Fraunces", serif;
+    font-size: var(--head);
+    /* nothing will get affected if font-weight is not applied */
+    font-weight: 700;
+    /* padding will as=lso work the same here */
+    margin: 0.6em 0 0.7em 0;
+    line-height: 1;
+}
+
+.green-text {
+    margin-right: 0.3rem;
+    color: var(--darkGreen);
+}
+
+.strike {
+    text-decoration: line-through;
+    /* does not affect if you skip this */
+    align-self: center;
+}

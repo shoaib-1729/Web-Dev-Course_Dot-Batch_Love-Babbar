@@ -1,0 +1,28 @@
+.text {
+    /* text-shadoe four parameters (horizontal distance from of shadow from actual text, vertical distance, blurry effect of shadow(opt), shadow-color(opt) [refer MDN for more info] */
+    text-shadow: 3px 3px 3px red;
+    text-shadow: 50px 60px 5px green;
+    /* applying multiple text shadows */
+    text-shadow: 3px 3px 3px red, 6px 6px 6px green;
+    /* applying text borders using text shadow */
+    text-shadow: 1px 1px 1px red;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    background-color: aqua;
+    /* color of box-shadow will be same as text color by default */
+    box-shadow: 10px 30px;
+    color: red;
+    /* different color pf shadow from text */
+    box-shadow: 10px 30px 5px green;
+    /* applying multiple box shadows */
+    /* negative values are used for changing border directions */
+    box-shadow: -10px -10px 15px green, 15px 15px 15px brown;
+    /* applying borders on the box using box shadow */
+    box-shadow: -1px -1px 1px black;
+    box-shadow: 1px 1px 1px black;
+    ;
+}

@@ -1,0 +1,60 @@
+.linear-div {
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    /*creating gradient colors (that is shifting from source color to the destination using smooth transitions is called gradient effect)*/
+    /*gradient are of linear,radial,conical types*/
+    /*here,we are applying linear gradient that is color shifting in linear directions(refer MDN for gradients)*/
+    /*by default linear gradient direction is set from top to bottom(default value)*/
+    background-image: linear-gradient(red, blue);
+    /*linear transitions from left to right*/
+    background-image: linear-gradient(to right, red, blue);
+    /*linear transitions from right to left*/
+    background-image: linear-gradient(to left, red, blue);
+    /*linear transitions from top to bottom*/
+    background-image: linear-gradient(to bottom, red, blue);
+    /*linear transitions from bottom to top*/
+    background-image: linear-gradient(to top, red, blue);
+    /*linear transitions diagonally i.e. from top left to bottom right*/
+    background-image: linear-gradient(to bottom right, red, blue);
+    /*linear transitions diagonally i.e. from top right to bottom left*/
+    background-image: linear-gradient(to bottom left, red, blue);
+    /*linear transitions diagonally i.e. from bottom left to top right*/
+    background-image: linear-gradient(to top right, red, blue);
+    /*linear transitions diagonally i.e. from bottom right to top left*/
+    background-image: linear-gradient(to top left, red, blue);
+    /*using multiple colors for gradient effect*/
+    background-image: linear-gradient(to top left, red, blue, green);
+    /*transition effect using angles*/
+    background-image: linear-gradient(90deg, red, blue);
+    background-image: linear-gradient(45deg, red, blue);
+    background-image: linear-gradient(180deg, red, blue);
+    /* transition effect using alpha transparency value i.e. rgba color values */
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 255, 1));
+}
+
+.radial-div {
+    border: 1px solid black;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    /* using radial gradient that is radial transition from one color to another */
+    background-image: radial-gradient(red, blue);
+    /* using multiple colors */
+    background-image: radial-gradient(red, blue, green);
+    /* changing transition shape to circle, default shape is elliptical generally */
+    background-image: radial-gradient(circle, red, blue);
+    /* defining colors using % */
+    background-image: radial-gradient(yellow 5%, orange 10%, red 85%);
+}
+
+
+/* Indian Flag gradient */
+
+.flag {
+    border: 1px solid black;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(#FF5733, #ffffff, #00FF00);
+}

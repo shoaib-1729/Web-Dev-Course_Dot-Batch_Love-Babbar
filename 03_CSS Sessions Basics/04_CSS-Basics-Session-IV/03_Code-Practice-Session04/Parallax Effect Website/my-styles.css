@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    /* aligning contents of the container in center (since we want heading to appear at centre) using flex-container properties  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* preserve 3d in transform-style property so that our 3D effect will come in action */
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.backgroundImage {
+    transform: translateZ(-40px) scale(5.1);
+    /*moving background Image to 40px in -Z axis, and after that scaling the image so that it looks bigger*/
+}
+
+.foregroundImage {
+    transform: translateZ(-20px) scale(3);
+    /*foreground image should be nearer to eyes (therefore, moving it 20px in -Z axis) so that it seems to appear nearer due to which it will seem moving faster than background image, also provide a scale so that it looks bigger*/
+}
+
+.backgroundImage,
+.foregroundImage {
+    /* for overlapping image of back and foreground set its position to absolute relative to its parent container div and set same height and width to both the images */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* helps in resizing the object inside the container so that it completely fits in according to the aspect ratio..(0experiment with this value by removing and applying again and seeing the effects) */
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    /*these value will be given by designers as input to developers before development, so don't try to memorize or remember these value sets it will be available to you as inputs whenever you are developing a project*/
+    font-size: 10rem;
+    /* font-family: "poppins", "sans-serif"; */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    top: 5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading {
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    /* background image is fixed for "bg" classes, hence using background-attachment:fixed prop. */
+    background-attachment: fixed;
+    background-position: center;
+    /* same as fit-object:cover prop. except that it fits the bg image acc. to the bg size */
+    background-size: cover;
+    height: 500px;
+}
+
+.bg1 {
+    /* attaching image in background for div containing h2 with corresponding classes 'bg1','bg2','bg3' using background-image property (refer mdn for img vs background-image) */
+    background-image: url(assets/sport-1.jpg);
+}
+
+.bg2 {
+    background-image: url(assets/sport-2.jpg);
+}
+
+.bg3 {
+    background-image: url(assets/sport-3.jpg);
+}
+
+.description {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    font-weight: 600;
+}

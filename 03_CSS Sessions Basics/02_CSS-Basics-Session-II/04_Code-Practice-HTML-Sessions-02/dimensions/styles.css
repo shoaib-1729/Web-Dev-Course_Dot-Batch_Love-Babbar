@@ -1,0 +1,21 @@
+    .box-01 {
+        /* after the maximum height is attained, then content will start overflow from the div */
+        max-height: 200px;
+        width: 200px;
+        background-color: aqua;
+        padding: 10px;
+        /* if the content gets overflow (when the content is more than the maximum height then ot will start to overflow from the box) */
+        /* handling overflow (refer MDN) */
+        overflow: scroll;
+    }
+    
+    .box-02 {
+        /* after the minimum height is attained, then height will automatically increase */
+        min-height: 50px;
+        width: 200px;
+        margin-top: 20px;
+        background-color: aqua;
+        padding: 10px;
+        /* if the content height is more than the minimum height, then the height will start increasing */
+        /* overflow does not occur here */
+    }
