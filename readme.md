@@ -2,8 +2,7 @@
 
 ### Contents to be included:
 ✅
-__Web Development Notes__
-<br\>
+__Web Development Notes__\
 ✅
 __Web Development Class Codes__
 <br\>
