@@ -12,4 +12,3 @@ __Web Development Practice Codes__\
 __Web Development Course Projects__
 
 `<img src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="Web-Dev-Dot_Batch"/>`
-![Web-Development-Bootcamp-Dot-Batch](https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg)
