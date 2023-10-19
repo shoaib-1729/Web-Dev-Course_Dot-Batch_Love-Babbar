@@ -1,0 +1,30 @@
+.container {
+    background-color: magenta;
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.box {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 2rem;
+    border: 1px solid black;
+    /* transition-shorthand-prop: transition-property(all by default)  transition-duration  transition-effect(ease bt default)  transition-delay */
+    /* transition-prop --> to which prop. you need to apply Transition! (by default transition will be applied to "all" the properties mentioned, however its a Bad Practice to use "all" since your website may take some time to render because of the high processing of animations) */
+    /* transition-duration --> how much time you want your transition to occur? */
+    /* transition-effect --> which effect you want as transition (ease, ease-in, ease-out, linear, custom effects using bezier curve, refer w3schools for reading all the effects in detail) */
+    /* transition-delay --> after how much time you need to start the transition? eg here after you hover it will take some time-delay then transition will be started */
+    /* read about all the prop. in detail on google (docs w3schools,mdn,stackOverFlow) */
+    /* transition: background-color; */
+    transition: all 2s ease 3s;
+    /* Custom Function from Chrome */
+    /* cubic-bezier(0.25, 0.1, 0, 0.99) */
+}
+
+.box:hover {
+    background-color: yellow;
+    transform: translateX(500px) rotate(360deg);
+}

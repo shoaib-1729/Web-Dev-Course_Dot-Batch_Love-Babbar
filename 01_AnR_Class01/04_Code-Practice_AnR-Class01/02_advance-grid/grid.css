@@ -1,0 +1,22 @@
+.container {
+    background-color: magenta;
+    border: 3px solid black;
+    display: grid;
+    /* grid-template-rows: 200px 200px; */
+    /* this will add on rows acc. as you increase the number of the boxes further */
+    /* verify the increasing the number of box div in grid.html file */
+    /* this is used when we don't know the no. of rows we have to make, eg when we scroll the contents on the facebook page, rows will be loaded automatically according to the content scrolled */
+    grid-auto-rows: minmax(100px, auto);
+    /* minmax(minRowHeight, maxRowHeight) */
+    /* remember while using grid-auto-rows, grid-template-rows prop. is omitted since we are generating rows automatically  */
+    /* refer mdn for grid-auto-columns, grid-auto-flow */
+    grid-template-columns: 300px 300px 300px;
+    gap: 10px;
+}
+
+.box {
+    background-color: aqua;
+    /* height: 100px;
+    width: 100px; */
+    border: 3px solid black;
+}

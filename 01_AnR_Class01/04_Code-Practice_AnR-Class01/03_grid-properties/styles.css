@@ -1,0 +1,69 @@
+.container {
+    background-color: magenta;
+    border: 3px solid black;
+    display: grid;
+    height: 700px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px 300px;
+    gap: 10px;
+    /* justify-content works same as flex,that is positioning the grid across main axis */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* align-items works same as flex,that is positioning the elements inside each cell of a grid across cross axis */
+    /* align-items: start; */
+    /* align-items: end; */
+    align-items: center;
+    /* stretch is by-default value, by default each grid-item takes full width of the cell */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+    /* align-contents works same as flex, deals with spacing around cross axis*/
+    /* align-content: center; */
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
+}
+
+.box {
+    background-color: aqua;
+    /* height: 100px;
+    width: 100px; */
+    border: 3px solid black;
+}
+
+
+/* #box01 { */
+
+
+/* align-self and justify self properties are applied to grid-items */
+
+
+/* align self is used for positioning items inside the cell of a grid across cross axis, same as align-content diff. is that align-self is used for styling particular grid item whereas align-content styles all the grid items present inside the grid container */
+
+
+/* align-self: center; */
+
+
+/* align-self: start; */
+
+
+/* align-self: end; */
+
+
+/* justify self is used for positioning items inside the cell of a grid across main axis */
+
+
+/* justify-self: center; */
+
+
+/* justify-self: start;
+    justify-self: end;
+    justify-self: stretch; */
+
+
+/* } */

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.container {
+    background-color: white;
+    height: 200px;
+    /* width: 700px; */
+    border: 3px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.box {
+    /* background-color: yellow; */
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    font-family: "Montserrat", sans-serif;
+    /* shifting from -one style to the other styles is called Animation Effect */
+    /* animation-name --> used to custom names to the animation */
+    animation-name: myAnimations;
+    /* animation-iteration-count --> how many times you want animation to repeat?*/
+    animation-iteration-count: 3;
+    /* animation will remain endlessly if this prop. is set to "infinite" */
+    /* animation-iteration-count: infinite; */
+    /* marks the duration of animation in within which it will going to occur! */
+    animation-duration: 5s;
+    /* this is same as transition-property i.e. contains the values ease, ease-in, ease-out, linear, custom, etc (refer docs)*/
+    animation-timing-function: cubic-bezier(0, -0.01, 1, 1);
+    /* animation-direction can be normal,reverse, alternate, alternate-reverse which will specify the direction in which animation will going to happen!  */
+    animation-direction: normal;
+    /* used for time-delay in animation effect */
+    animation-delay: 1s;
+    /* animation-fill-mode: ; */
+    /* check for animation shorthand property and animation-fill-mode prop. from documentations */
+}
+
+.item {
+    font-family: "Fraunces", serif;
+    margin: 10px auto;
+    /* background-color: aqua; */
+}
+
+@keyframes myAnimations {
+    /* Keyframes are used to mark the changes our animation will make in different instances of time... (refer docs for more detail) */
+    /* from {
+            width: 300px;
+            background-color: blanchedalmond;
+        }
+        to {
+            width: 100%;
+            background-color: greenyellow;
+        } */
+    0% {
+        width: 200px;
+        background-color: orangered;
+    }
+    50% {
+        width: 400px;
+        background-color: white;
+    }
+    100% {
+        width: 100%;
+        background-color: darkgreen;
+    }
+}

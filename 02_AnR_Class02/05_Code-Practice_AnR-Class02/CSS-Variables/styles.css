@@ -1,0 +1,34 @@
+* {
+    --red: rgb(255, 0, 0);
+}
+
+
+/* Difference between declaring global variables inside universal selector and inside root? Both of then will perform the same job (Google it)*/
+
+:root {
+    /* This is root of all html elements, variables declared in root can be accessed globally */
+    /* Global Declaration of CSS Variables */
+    --dark-blue: #3349FF;
+    /* --red: rgb(255, 0, 0); */
+}
+
+.container {
+    /* background-color: magenta; */
+    height: 700px;
+    width: 700px;
+    border: 2px solid black;
+    /* This will have no effect if variable "red" is not declared globally! (Try Once) */
+    background-color: var(--red);
+}
+
+.box {
+    background-color: aqua;
+    /* height: 100px; */
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px auto;
+    /* This only has access in this block only where it is declared, if you try to access it from other blocks no effect will be produced since it is declared locally not globally */
+    /* Local Declaration of CSS Variables */
+    /* --red: rgb(255, 0, 0); */
+    color: var(--red);
+}
