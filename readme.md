@@ -14,7 +14,7 @@ __Web Development Class Codes__\
 ✅
 __Web Development Practice Codes__\
 ✅
-__Web Development Course Projects__\
+__Web Development Course Projects__
 
 
 
