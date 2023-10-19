@@ -3,9 +3,9 @@
 This repo was created to share my coding insights along my Web Development journey <br/>so that you too can crack the codes alongside me!\
 
 
-`Contents to be included:`
+###Contents included in this repo:###
 
-![Dot Batch](https://img.shields.io/badge/WebDev-Projects-Black)
+`![Dot Batch](https://img.shields.io/badge/WebDev-Projects-Black)`
 
 ✅
 __Web Development Notes__\
